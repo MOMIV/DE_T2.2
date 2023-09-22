@@ -35,13 +35,11 @@ create table if not exists author(
 	author_id serial PRIMARY KEY,
 	last_name VARCHAR ( 255 ),
 	first_name VARCHAR ( 255 ),
-	patronymic VARCHAR ( 255 ),
-	FOREIGN KEY(reader_id) REFERENCES readers(reader_id) ON DELETE CASCADE,
-	FOREIGN KEY(book_id) REFERENCES books(book_id) ON DELETE CASCADE
+	patronymic VARCHAR ( 255 )
 );
 create table if not exists book_author(
 	book_author_id serial PRIMARY KEY,
-	author_id VARCHAR ( 255 ),
+	author_id int,
 	book_id VARCHAR ( 255 ),
 	FOREIGN KEY(author_id) REFERENCES author (author_id) ON DELETE CASCADE,
 	FOREIGN KEY(book_id) REFERENCES books(book_id) ON DELETE CASCADE
