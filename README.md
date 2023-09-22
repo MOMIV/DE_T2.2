@@ -20,4 +20,4 @@
 
       Решение
 
-![Image alt](https://github.com/MOMIV/DE_T2.1/raw/main/Схема.pgerd.png)
+![Image alt](https://github.com/MOMIV/DE_T2.2/raw/main/Схема.pgerd.png)
